@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaMart - Online Store</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #020617;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.btn {
+  background: #38bdf8;
+  padding: 10px 20px;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.products {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">NovaMart</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Welcome to NovaMart</h1>
+  <p>Your one-stop online store</p>
+  <button class="btn">Shop Now</button>
+</section>
+
+<section id="products" class="products">
+  <h2>Our Products</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/200">
+      <h3>Product 1</h3>
+      <p>₹499</p>
+      <button class="btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/200">
+      <h3>Product 2</h3>
+      <p>₹799</p>
+      <button class="btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/200">
+      <h3>Product 3</h3>
+      <p>₹999</p>
+      <button class="btn">Buy Now</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="products">
+  <h2>Contact Us</h2>
+  <p>Email: novamart@gmail.com</p>
+</section>
+
+<footer>
+  <p>© 2026 NovaMart</p>
+</footer>
+
+</body>
+</html>
